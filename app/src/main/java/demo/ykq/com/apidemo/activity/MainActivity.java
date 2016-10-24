@@ -30,7 +30,7 @@ public class MainActivity extends BaseActivity {
     @Event(R.id.btn_submit)
     private void onSubmitClick(View v)
     {
-        //测试
+        //测试2
         HashMap<String,String> urlParam=new HashMap<>();
         urlParam.put("name",mTvName.getText().toString());
         urlParam.put("password",APIHelper.getMd5PassWord(mTvPw.getText().toString()));
