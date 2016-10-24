@@ -87,11 +87,11 @@ public class AES {
                 String originalString = new String(original,"utf-8");
                 return originalString;
             } catch (Exception e) {
-                System.out.println(e.toString());
+                System.out.println(e);
                 return null;
             }
         } catch (Exception ex) {
-            System.out.println(ex.toString());
+            System.out.println(ex);
             return null;
         }
     }
@@ -132,7 +132,7 @@ public class AES {
 //        return b;
 //    }
 
-    public final static String MD5(String s) {
+    public static final String MD5(String s) {
         char hexDigits[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
         try {
             byte[] btInput = s.getBytes();
